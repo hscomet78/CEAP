@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    height: 100vh;
+    overflow: auto;
+    grid-template-columns:
+        [left-navbar-start] 12% [left-navbar-end content-start] 88% [content-end];
+    grid-template-rows:
+        [body-start] 75% [body-end footer-start] 25% [footer-end];
+
+    border: 1px solid black;
+}
+
+.content {
+    overflow: auto;
+}
+
+.left-navbar {
+    text-align: center;
+    grid-row: body-start / footer-end;
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    overflow: auto;
+}
+
+
+.footer {
+    grid-column: content-start / right-sidebar-end;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}

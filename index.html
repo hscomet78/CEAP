@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link href='./css/fullcalendar.main.min.css' rel='stylesheet' />
+	<link href='./css/grid.css' rel='stylesheet' />
+	<link href='./css/weather.css' rel='stylesheet'>
+
+	<script src="./js/weather.js"></script>
+	<script src='./js/fullcalendar.main.min.js'></script>
+	<script src="./js/locationBasedRecommend.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="left-navbar">
+
+			<h3>오늘 하루 활동제안</h3>
+			<P class="weather-date"></P>
+			<p class="weather"></p>
+
+			<h3>기온맞춤 옷 추천</h3>
+			<p class="clothing-recommendation"></p>
+
+			<h3>우산 챙겨야 할까?</h3>
+			<p class="ummbrella-recommendation"></p>
+
+		</div>
+		<div class="content">
+			<div id='calendar'></div>
+			<div id='popup'
+				style="width:500px; height:600px; display:none; background-color:white; padding:20px; border-radius:14px; border:2px solid #eeeeee">
+			</div>
+		</div>
+
+		<div class="footer">
+
+			<h3>기입 지역 주변에 가볼만한곳</h3>
+			<input type="text" id="keywords" name="keywords" required />
+			<button onclick="locationBasedRecommend()">입력</button>
+			<div id="result"></div>
+
+			<div id="loading">
+				<img src="https://studentrights.sen.go.kr/images/common/loading.gif">
+			</div>
+
+		</div>
+
+
+	</div>
+	<script src="./js/calendar.js"></script>
+	<script src="https://kit.fontawesome.com/21a62cd8eb.js"></script>
+</body>
+</html>
