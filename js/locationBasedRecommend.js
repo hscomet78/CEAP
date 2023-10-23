@@ -3,7 +3,7 @@ $(document).ready(function () {
   });
 
   function locationBasedRecommend() {
-    const api_key = "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"  // <- API KEY 입력
+    const api_key = "apikey"  // <- API KEY 입력
     const keywords = document.getElementById('keywords').value
     $('#loading').show();
 
