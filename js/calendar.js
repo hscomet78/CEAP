@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
             right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
         },
         locale: initialLocalesCode,
-        googleCalendarApiKey: 'AIzaSyD81ehkYsF5rpz8H9KWTz1L23qOynMCG50',
+        googleCalendarApiKey: 'myapikey',
         events: {
-            googleCalendarId: '146993739462bc740346f2deff54727800144d70bfaca0584601470e5a136353@group.calendar.google.com',
+            googleCalendarId: 'mycalendarID',
             className: 'gcal-event' // an option!
         },
         // Create new event
